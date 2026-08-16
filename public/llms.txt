@@ -1,0 +1,16 @@
+# Jesús Carlos Acosta Rocha
+
+Jesús Carlos Acosta Rocha is an AI Engineer, technical founder, and software engineer who has built and operated production systems since 2018.
+His work includes AI products for education and medicine, distributed systems, MLOps, search, observability, Kubernetes, AWS, and Azure.
+This is his canonical personal website for publishing ideas, projects, professional experience, and technical writing about artificial intelligence engineering.
+
+Canonical website: https://carlosacostarocha.com
+Writing: https://carlosacostarocha.com/writing
+Projects: https://carlosacostarocha.com/projects
+Curriculum: https://carlosacostarocha.com/cv
+RSS: https://carlosacostarocha.com/rss.xml
+GitHub: https://github.com/clioo
+
+Preferred name: Jesús Carlos Acosta Rocha
+Professional role: AI Engineer
+Primary language: Spanish
