@@ -11,15 +11,11 @@ npm run dev
 
 Abre `http://localhost:3000`.
 
-## Contenido que debes completar
+## Contenido
 
-Los datos personales y enlaces viven en `data/site.ts`. Añade ahí:
+La biografía, experiencia, proyectos y enlaces públicos viven en `data/site.ts`. El sitio publica GitHub, trayectoria profesional y métricas de proyectos; no incluye domicilio, teléfono ni correo personal del currículum.
 
-- URL de GitHub
-- URL de LinkedIn
-- correo público
-
-La experiencia y los proyectos públicos viven en `data/site.ts`. Los datos privados del currículum no se publican.
+Las entradas editoriales viven en `app/writing/`. Al añadir una entrada, actualiza también su registro en `data/site.ts`, `app/sitemap.ts` y `app/rss.xml/route.ts`.
 
 ## SEO incluido
 
@@ -35,7 +31,15 @@ Cuando el sitio esté desplegado, agrega `https://carlosacostarocha.com/sitemap.
 
 ## Despliegue
 
-`npm run build` produce una exportación estática en `out/`. Cloudflare puede servir ese directorio directamente y volver a construirlo en cada push a GitHub.
+`npm run build` produce una exportación estática en `out/`. El proyecto de Cloudflare Pages se llama `carlosacostarocha` y sirve el dominio `https://carlosacostarocha.com`.
+
+Para publicar la versión actual:
+
+```bash
+npm run deploy
+```
+
+El comando construye el sitio y sube `out/` a Cloudflare Pages. La autenticación de Wrangler está guardada en el llavero de macOS; si expira, vuelve a iniciar sesión antes de desplegar.
 
 ## Verificación
 
