@@ -1,14 +1,20 @@
 import type { MetadataRoute } from "next";
-import { posts, site } from "@/data/site";
+import { posts, selectedProjects, site } from "@/data/site";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ["/", "/writing/", "/projects/", "/cv/"].map((path) => ({
+  const staticPages = ["/", "/start-here/", "/writing/", "/projects/", "/cv/"].map((path) => ({
     url: `${site.url}${path}`,
-    lastModified: new Date("2026-08-16T00:00:00Z"),
+    lastModified: new Date("2026-08-17T00:00:00Z"),
     changeFrequency: path === "/" ? ("weekly" as const) : ("monthly" as const),
-    priority: path === "/" ? 1 : 0.8,
+    priority: path === "/" ? 1 : path === "/start-here/" ? 0.9 : 0.8,
+  }));
+  const projectPages = selectedProjects.map((project) => ({
+    url: `${site.url}/projects/${project.slug}/`,
+    lastModified: new Date("2026-08-17T00:00:00Z"),
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
   }));
   const postPages = posts.map((post) => ({
     url: `${site.url}/writing/${post.slug}/`,
@@ -17,5 +23,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...postPages];
+  return [...staticPages, ...projectPages, ...postPages];
 }

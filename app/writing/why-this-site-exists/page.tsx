@@ -135,6 +135,12 @@ export default function FirstPost() {
           directly.
         </p>
         <p>It will grow alongside the projects.</p>
+
+        <nav className="article-next" aria-label="Continue exploring">
+          <Link href="/start-here/">Start here</Link>
+          <Link href="/projects/">Explore the projects</Link>
+          <Link href="/writing/">All writing</Link>
+        </nav>
       </div>
     </article>
   );

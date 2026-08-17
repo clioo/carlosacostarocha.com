@@ -16,6 +16,9 @@ export default function NotFound() {
         <Link className="button primary" href="/">
           Return home
         </Link>
+        <Link className="text-link" href="/start-here/">
+          Start here
+        </Link>
         <Link className="text-link" href="/projects/">
           Explore projects
         </Link>

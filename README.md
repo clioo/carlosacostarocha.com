@@ -13,7 +13,7 @@ Open `http://localhost:3000`.
 
 ## Content
 
-Biography, experience, projects, and public links live in `data/site.ts`. The site intentionally omits the home address, phone number, and personal email contained in the source résumé.
+Biography, experience, project case studies, and public links live in `data/site.ts`. The site intentionally omits the home address, phone number, and personal email contained in the source résumé.
 
 Editorial posts live in `app/writing/`. When adding a post, add its record to `data/site.ts`; the sitemap and RSS feed derive their entries from that data.
 
@@ -21,6 +21,8 @@ Editorial posts live in `app/writing/`. When adding a post, add its record to `d
 
 - Global and per-page metadata
 - `Person`, `WebSite`, `ItemList`, and `BlogPosting` structured data
+- A guided `/start-here/` entity and content map
+- Indexable case-study routes for every selected project
 - `sitemap.xml`
 - `robots.txt`
 - RSS at `/rss.xml`

@@ -25,7 +25,7 @@ export default function ProjectsPage() {
         "@type": "CreativeWork",
         name: project.title,
         description: project.summary,
-        url: project.links[0].href,
+        url: `${site.url}/projects/${project.slug}/`,
         creator: { "@id": `${site.url}/#person` },
         sameAs: project.links.map((link) => link.href),
       },
@@ -59,6 +59,9 @@ export default function ProjectsPage() {
               <strong>{project.outcome}</strong>
               <p className="project-stack">{project.stack}</p>
               <div className="project-links" aria-label={`${project.title} links`}>
+                <Link href={`/projects/${project.slug}/`}>
+                  Read the case study <span aria-hidden="true">→</span>
+                </Link>
                 {project.links.map((link) => (
                   <a href={link.href} key={link.href} target="_blank" rel="noreferrer">
                     {link.label} <span aria-hidden="true">↗</span>
@@ -88,7 +91,7 @@ export default function ProjectsPage() {
         </div>
       </div>
       <Link className="text-link projects-back" href="/writing/">
-        Read how I work
+        Read the writing
       </Link>
     </section>
   );

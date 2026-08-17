@@ -10,6 +10,7 @@ export function Footer() {
           <p className="muted">Writing, projects, and engineering notes in public.</p>
         </div>
         <div className="footer-links">
+          <Link href="/start-here/">Start Here</Link>
           <Link href="/writing/">Writing</Link>
           <Link href="/projects/">Projects</Link>
           <Link href="/cv/">Experience</Link>

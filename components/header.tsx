@@ -6,6 +6,7 @@ import { site } from "@/data/site";
 import { ThemeToggle } from "./theme-toggle";
 
 const navigation = [
+  { href: "/start-here/", label: "Start Here" },
   { href: "/writing/", label: "Writing" },
   { href: "/projects/", label: "Projects" },
   { href: "/cv/", label: "Experience" },

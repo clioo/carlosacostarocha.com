@@ -4,7 +4,7 @@ import { formatPostDate, posts } from "@/data/site";
 import { pageMetadata } from "@/lib/metadata";
 
 const description =
-  "Essays by Jesús Carlos Acosta Rocha about production AI, software architecture, developer tools, and engineering decisions.";
+  "The first public engineering note by Jesús Carlos Acosta Rocha, with more writing added as his projects progress.";
 
 export const metadata: Metadata = pageMetadata({
   title: "Writing",
@@ -19,8 +19,8 @@ export default function WritingPage() {
         <p className="eyebrow">Writing</p>
         <h1>Notes from building.</h1>
         <p>
-          Essays about production AI, software architecture, developer tools, and the choices that
-          turn experiments into useful systems.
+          The first note is below. Future entries will document production AI, software
+          architecture, developer tools, and the decisions behind systems I am actively building.
         </p>
       </div>
       <div className="post-list">

@@ -47,6 +47,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         url: `${site.url}/`,
         jobTitle: site.role,
         description: site.description,
+        image: {
+          "@type": "ImageObject",
+          url: site.photoUrl,
+          caption: `${site.name} with his dog outdoors`,
+        },
         alumniOf: {
           "@type": "CollegeOrUniversity",
           name: "Autonomous University of Sinaloa",

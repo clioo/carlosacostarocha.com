@@ -3,6 +3,8 @@ export const site = {
   shortName: "Jesús Carlos Acosta Rocha",
   role: "AI Engineer",
   url: "https://carlosacostarocha.com",
+  photo: "/jesus-carlos-acosta-rocha-v1.webp",
+  photoUrl: "https://carlosacostarocha.com/jesus-carlos-acosta-rocha-v1.webp",
   description:
     "Jesús Carlos Acosta Rocha is an AI Engineer and technical founder building production AI systems, developer tools, and privacy-minded software.",
   email: "",
@@ -36,6 +38,17 @@ export const selectedProjects = [
       "A medical exam-preparation platform built around a structured clinical knowledge base and AI-assisted educational workflows.",
     outcome:
       "My work spans product development, backend systems, mobile clients, evaluation, observability, and cloud operations.",
+    role: "Technical founder and full-stack engineer",
+    status: "Live product",
+    context:
+      "GliaMediQ turns a structured clinical knowledge base into exam-preparation workflows for medical learners. The engineering challenge is not generation alone: content has to be reviewable, observable, and useful across web and mobile clients.",
+    contributions: [
+      "Built product and backend workflows with Django and Celery.",
+      "Developed Flutter clients and systems for publishing structured clinical content.",
+      "Added evaluation and observability for AI-assisted workflows with LangSmith.",
+      "Operated cloud infrastructure on Azure and Kubernetes.",
+    ],
+    evidence: "More than 9,000 clinical cases are published on the live platform.",
     stack: "Django, Flutter, Celery, LangSmith, Azure, Kubernetes",
     links: [{ label: "Visit GliaMediQ", href: "https://gliamediq.com/" }],
   },
@@ -47,6 +60,17 @@ export const selectedProjects = [
       "A local-first visual workflow editor for designing, inspecting, and exporting AI agent graphs.",
     outcome:
       "It runs in the browser and can pair with an optional local MCP companion so coding agents can edit the same graph.",
+    role: "Creator and maintainer",
+    status: "Live and open source",
+    context:
+      "Agent workflows become difficult to reason about when they exist only as code or configuration. OpenGraph gives the workflow a visual form without turning the browser into the source of truth for private local work.",
+    contributions: [
+      "Built the visual graph editor with React, TypeScript, and React Flow.",
+      "Designed local-first browser state with Zustand.",
+      "Created an optional MCP companion so coding agents can work with the same graph.",
+      "Published both the hosted editor and the implementation source.",
+    ],
+    evidence: "The live editor and its source code are publicly available.",
     stack: "React, TypeScript, React Flow, Zustand, MCP",
     links: [
       { label: "Open the live app", href: "https://www.opengraph.work/" },
@@ -61,6 +85,17 @@ export const selectedProjects = [
       "A menu-bar app that detects calls, transcribes microphone and system audio with local models, and saves structured Markdown notes.",
     outcome:
       "It is designed for private, account-free capture, with audio and transcripts kept on the Mac.",
+    role: "Creator and maintainer",
+    status: "Open source",
+    context:
+      "Meeting capture often sends sensitive audio through a cloud service. Write That Down explores a local alternative: capture the call on the Mac, transcribe it on-device, and leave behind ordinary Markdown.",
+    contributions: [
+      "Built a native menu-bar experience with SwiftUI and AppKit.",
+      "Captured microphone and system audio with ScreenCaptureKit.",
+      "Integrated local transcription through WhisperKit.",
+      "Kept the workflow account-free, local, and compatible with plain Markdown tools.",
+    ],
+    evidence: "The complete macOS implementation is published on GitHub.",
     stack: "Swift 6, SwiftUI, AppKit, WhisperKit, ScreenCaptureKit",
     links: [
       { label: "View source", href: "https://github.com/clioo/write-that-down-patrick" },

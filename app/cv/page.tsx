@@ -12,8 +12,32 @@ export const metadata: Metadata = pageMetadata({
 });
 
 export default function CVPage() {
+  const cvSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${site.url}/cv/#page`,
+    url: `${site.url}/cv/`,
+    name: `Professional experience | ${site.name}`,
+    description,
+    inLanguage: "en-US",
+    mainEntity: {
+      "@type": "Person",
+      "@id": `${site.url}/#person`,
+      hasOccupation: experience.map((item) => ({
+        "@type": "Occupation",
+        name: `${item.role} at ${item.company}`,
+        description: item.summary,
+        skills: item.highlights.join(", "),
+      })),
+    },
+  };
+
   return (
     <section className="shell page-shell cv-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(cvSchema) }}
+      />
       <div className="cv-heading">
         <p className="eyebrow">Professional experience</p>
         <h1>{site.name}</h1>
@@ -60,6 +84,16 @@ export default function CVPage() {
         <p>Education</p>
         <h2>Bachelor’s degree in Software Engineering</h2>
         <span>Autonomous University of Sinaloa, 2019</span>
+      </section>
+
+      <section className="cv-contact" aria-labelledby="cv-contact-title">
+        <div>
+          <p className="eyebrow">Contact</p>
+          <h2 id="cv-contact-title">Want to discuss the work?</h2>
+        </div>
+        <a className="button primary" href={site.linkedin} target="_blank" rel="me noreferrer">
+          Connect on LinkedIn <span aria-hidden="true">↗</span>
+        </a>
       </section>
     </section>
   );

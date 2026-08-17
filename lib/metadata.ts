@@ -18,10 +18,10 @@ type PageMetadataOptions = {
 };
 
 const defaultImage: SocialImage = {
-  url: "/social-card-v1.jpg",
+  url: "/social-card-v2.png",
   width: 1200,
   height: 630,
-  alt: "Abstract composition of paper, metal, and blue thread",
+  alt: "Jesús Carlos Acosta Rocha, AI Engineer and technical founder",
 };
 
 export function pageMetadata({

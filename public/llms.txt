@@ -5,6 +5,7 @@ His work includes AI products for education and medicine, distributed systems, M
 This is his canonical personal website for publishing projects, professional experience, and technical writing about artificial intelligence engineering.
 
 Canonical website: https://carlosacostarocha.com/
+Start here: https://carlosacostarocha.com/start-here/
 Writing: https://carlosacostarocha.com/writing/
 Projects: https://carlosacostarocha.com/projects/
 CV and experience: https://carlosacostarocha.com/cv/
@@ -13,9 +14,12 @@ GitHub: https://github.com/clioo
 LinkedIn: https://www.linkedin.com/in/jesus-a-rocha/
 
 Public projects:
-- GliaMediQ: https://gliamediq.com/
+- GliaMediQ case study: https://carlosacostarocha.com/projects/gliamediq/
+- GliaMediQ live product: https://gliamediq.com/
+- OpenGraph case study: https://carlosacostarocha.com/projects/opengraph/
 - OpenGraph live app: https://www.opengraph.work/
 - OpenGraph source: https://github.com/clioo/opengraph
+- Write That Down case study: https://carlosacostarocha.com/projects/write-that-down/
 - Write That Down source: https://github.com/clioo/write-that-down-patrick
 
 Preferred name: Jesús Carlos Acosta Rocha

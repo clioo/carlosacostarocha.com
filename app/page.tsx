@@ -29,11 +29,11 @@ export default function Home() {
             then write about the architecture, trade-offs, and operating lessons behind it.
           </p>
           <div className="actions">
-            <Link className="button primary" href="/projects/">
-              Explore my projects
+            <Link className="button primary" href="/start-here/">
+              Start here
             </Link>
-            <Link className="text-link" href="/writing/">
-              Read my writing
+            <Link className="text-link" href="/projects/">
+              Explore my projects
             </Link>
           </div>
           <div className="profile-links" aria-label="Professional profiles">
@@ -47,14 +47,14 @@ export default function Home() {
         </div>
         <div className="hero-media">
           <Image
-            src="/hero-editorial-v1.webp"
-            alt="Paper and metal pieces connected by a blue thread"
+            src={site.photo}
+            alt="Jesús Carlos Acosta Rocha smiling beside his dog outdoors"
             fill
             priority
             fetchPriority="high"
             loading="eager"
             decoding="sync"
-            sizes="(max-width: 767px) 100vw, 50vw"
+            sizes="(max-width: 900px) 100vw, 50vw"
           />
         </div>
       </section>
@@ -84,11 +84,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="shell intro-section">
-        <p className="section-lead">
+      <section className="shell intro-section" aria-labelledby="operating-scope-title">
+        <h2 className="section-lead" id="operating-scope-title">
           I have worked on production software since 2018, across public services, commerce,
           industry, education, and health.
-        </p>
+        </h2>
         <div className="principles">
           <p>
             <strong>Production.</strong> Models matter when they survive traffic, failure, and change.
@@ -125,7 +125,7 @@ export default function Home() {
               src="/writing-editorial-v1.webp"
               alt="Layers of translucent paper crossed by a blue line"
               fill
-              sizes="(max-width: 767px) 100vw, 42vw"
+              sizes="(max-width: 900px) 100vw, 42vw"
             />
           </div>
           <div className="feature-copy">
@@ -143,8 +143,13 @@ export default function Home() {
       </section>
 
       <section className="shell work-section" aria-labelledby="work-title">
-        <h2 id="work-title">Three ways into my work.</h2>
+        <h2 id="work-title">Four routes through my work.</h2>
         <div className="work-index">
+          <Link href="/start-here/">
+            <span>Start here</span>
+            <strong>A guided map of what I build, operate, and explain.</strong>
+            <span aria-hidden="true">→</span>
+          </Link>
           <Link href="/writing/">
             <span>Writing</span>
             <strong>Field notes on AI systems, engineering decisions, and production trade-offs.</strong>
