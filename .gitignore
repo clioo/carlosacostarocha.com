@@ -4,6 +4,7 @@
 # next.js
 /.next/
 /out/
+/.wrangler/
 
 # local files
 .DS_Store

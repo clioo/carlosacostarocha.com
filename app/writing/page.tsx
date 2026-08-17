@@ -1,26 +1,45 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { posts } from "@/data/site";
+import { formatPostDate, posts } from "@/data/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = { title: "Ideas", description: "Artículos y notas de Jesús Carlos Acosta Rocha sobre IA, ingeniería y proyectos." };
+const description =
+  "Essays by Jesús Carlos Acosta Rocha about production AI, software architecture, developer tools, and engineering decisions.";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Writing",
+  description,
+  path: "/writing/",
+});
 
 export default function WritingPage() {
   return (
     <section className="shell page-shell">
       <div className="page-heading">
-        <p className="eyebrow">Ideas</p>
-        <h1>Escribir para pensar mejor.</h1>
-        <p>Notas sobre inteligencia artificial, decisiones técnicas y el trabajo de llevar una idea a algo que funciona.</p>
+        <p className="eyebrow">Writing</p>
+        <h1>Notes from building.</h1>
+        <p>
+          Essays about production AI, software architecture, developer tools, and the choices that
+          turn experiments into useful systems.
+        </p>
       </div>
       <div className="post-list">
         {posts.map((post) => (
           <article key={post.slug}>
-            <p className="meta"><time dateTime={post.date}>15 agosto 2026</time><span>{post.readingTime}</span></p>
-            <h2><Link href={`/writing/${post.slug}`}>{post.title}</Link></h2>
+            <p className="meta">
+              <time dateTime={post.date}>{formatPostDate(post.date)}</time>
+              <span>{post.readingTime}</span>
+            </p>
+            <h2>
+              <Link href={`/writing/${post.slug}/`}>{post.title}</Link>
+            </h2>
             <p>{post.summary}</p>
           </article>
         ))}
       </div>
+      <a className="text-link writing-rss" href="/rss.xml">
+        Follow the RSS feed
+      </a>
     </section>
   );
 }

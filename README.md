@@ -1,47 +1,47 @@
 # carlosacostarocha.com
 
-Sitio personal de Jesús Carlos Acosta Rocha. Está construido con Next.js, TypeScript y CSS nativo.
+The personal website of Jesús Carlos Acosta Rocha, built with Next.js, TypeScript, and native CSS.
 
-## Desarrollo local
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abre `http://localhost:3000`.
+Open `http://localhost:3000`.
 
-## Contenido
+## Content
 
-La biografía, experiencia, proyectos y enlaces públicos viven en `data/site.ts`. El sitio publica GitHub, trayectoria profesional y métricas de proyectos; no incluye domicilio, teléfono ni correo personal del currículum.
+Biography, experience, projects, and public links live in `data/site.ts`. The site intentionally omits the home address, phone number, and personal email contained in the source résumé.
 
-Las entradas editoriales viven en `app/writing/`. Al añadir una entrada, actualiza también su registro en `data/site.ts`, `app/sitemap.ts` y `app/rss.xml/route.ts`.
+Editorial posts live in `app/writing/`. When adding a post, add its record to `data/site.ts`; the sitemap and RSS feed derive their entries from that data.
 
-## SEO incluido
+## Search and agent discovery
 
-- metadata global y por página
-- datos estructurados `Person` en JSON-LD
+- Global and per-page metadata
+- `Person`, `WebSite`, `ItemList`, and `BlogPosting` structured data
 - `sitemap.xml`
 - `robots.txt`
-- RSS en `/rss.xml`
-- resumen para agentes en `/llms.txt`
-- URLs canónicas y Open Graph
+- RSS at `/rss.xml`
+- Agent summary at `/llms.txt`
+- Canonical URLs and page-specific Open Graph cards
 
-Cuando el sitio esté desplegado, agrega `https://carlosacostarocha.com/sitemap.xml` en Google Search Console y solicita la indexación de la portada.
+Submit `https://carlosacostarocha.com/sitemap.xml` in Google Search Console after a production deployment.
 
-## Despliegue
+## Deployment
 
-`npm run build` produce una exportación estática en `out/`. El proyecto de Cloudflare Pages se llama `carlosacostarocha` y sirve el dominio `https://carlosacostarocha.com`.
+`npm run build` creates a static export in `out/`. The Cloudflare Pages project is named `carlosacostarocha` and serves `https://carlosacostarocha.com`.
 
-Para publicar la versión actual:
+Publish the current version with:
 
 ```bash
 npm run deploy
 ```
 
-El comando construye el sitio y sube `out/` a Cloudflare Pages. La autenticación de Wrangler está guardada en el llavero de macOS; si expira, vuelve a iniciar sesión antes de desplegar.
+Wrangler authentication is stored in the macOS keychain. Re-authenticate before deploying if the token expires.
 
-## Verificación
+## Verification
 
 ```bash
 npm run lint
