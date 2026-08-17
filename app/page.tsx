@@ -51,6 +51,9 @@ export default function Home() {
             alt="Paper and metal pieces connected by a blue thread"
             fill
             priority
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
             sizes="(max-width: 767px) 100vw, 50vw"
           />
         </div>
