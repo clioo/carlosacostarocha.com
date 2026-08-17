@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <section className="shell hero">
-        <div className="hero-copy reveal">
+        <div className="hero-copy">
           <p className="eyebrow">{site.name}</p>
           <h1>
             Production AI.
@@ -45,7 +45,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="hero-media reveal delay-one">
+        <div className="hero-media">
           <Image
             src="/hero-editorial-v1.webp"
             alt="Paper and metal pieces connected by a blue thread"
