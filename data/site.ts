@@ -1,12 +1,12 @@
 export const site = {
   name: "Jesús Carlos Acosta Rocha",
   shortName: "Jesús Carlos Acosta Rocha",
-  role: "AI Engineer",
+  role: "Senior Software Engineer & AI Technical Leader",
   url: "https://carlosacostarocha.com",
   photo: "/jesus-carlos-acosta-rocha-v1.webp",
   photoUrl: "https://carlosacostarocha.com/jesus-carlos-acosta-rocha-v1.webp",
   description:
-    "Jesús Carlos Acosta Rocha is an AI Engineer and technical founder building production AI systems, developer tools, and privacy-minded software.",
+    "Jesús Carlos Acosta Rocha is a senior software engineer and technical founder building production AI systems, developer tools, and privacy-minded software.",
   email: "",
   github: "https://github.com/clioo",
   linkedin: "https://www.linkedin.com/in/jesus-a-rocha/",

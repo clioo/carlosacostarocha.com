@@ -6,31 +6,31 @@ brand
 
 ## Users
 
-Ingenieros, líderes técnicos, fundadores, reclutadores y agentes de búsqueda que necesitan entender con rapidez quién es Jesús Carlos Acosta Rocha, qué ha construido y cómo piensa. Llegan desde Google, GitHub, una recomendación profesional o una consulta asistida por IA.
+Engineers, technical leaders, founders, recruiters, and search agents who need to quickly understand who Jesús Carlos Acosta Rocha is, what he has built, and how he thinks. They arrive from Google, GitHub, a professional referral, or an AI-assisted query.
 
 ## Product Purpose
 
-Reunir en un dominio propio la trayectoria, los proyectos y las ideas de Jesús Carlos Acosta Rocha. El sitio debe demostrar experiencia mediante sistemas reales, decisiones y resultados verificables. El éxito significa que una persona o un agente pueda identificar correctamente su nombre, experiencia en IA y software, proyectos relevantes y enlaces públicos.
+Bring Jesús Carlos Acosta Rocha's career, projects, and ideas together on a domain he controls. The site should demonstrate experience through real systems, decisions, and verifiable results. Success means that a person or agent can correctly identify his name, experience in AI and software, relevant projects, and public links.
 
 ## Brand Personality
 
-Precisa, experimentada y cercana. La voz comunica criterio técnico sin grandilocuencia, y explica sistemas complejos con lenguaje directo.
+Precise, experienced, and approachable. The voice communicates technical judgment without grandiosity and explains complex systems in direct language.
 
 ## Anti-references
 
-- Marketing genérico de herramientas de IA con neón, gradientes púrpura, robots o cerebros.
-- Portafolios pretenciosos que priorizan frases poéticas sobre evidencia.
-- Currículums corporativos densos que convierten la trayectoria en una lista interminable.
-- Métricas sin fuente, habilidades infladas o afirmaciones imposibles de verificar.
+- Generic AI-tool marketing with neon, purple gradients, robots, or brains.
+- Pretentious portfolios that prioritize poetic phrases over evidence.
+- Dense corporate résumés that turn a career into an endless list.
+- Metrics without sources, inflated skills, or claims that cannot be verified.
 
 ## Design Principles
 
-1. Evidencia antes que adjetivos. Cada afirmación importante debe poder vincularse con trabajo, resultados o escritura.
-2. Pensar en público. Los artículos explican decisiones, límites y aprendizajes, no solo conclusiones.
-3. Una identidad inequívoca. El nombre completo, el rol y las entidades relacionadas deben ser legibles para humanos, buscadores y agentes.
-4. Complejidad progresiva. La portada orienta; proyectos, artículos y currículum ofrecen profundidad sin saturar.
-5. Privacidad deliberada. Se publica información profesional útil, nunca domicilio, teléfono o correo personal sin una decisión explícita.
+1. Evidence before adjectives. Every important claim should link to work, results, or writing.
+2. Think in public. Articles explain decisions, limits, and lessons—not only conclusions.
+3. An unambiguous identity. The full name, role, and related entities must be legible to people, search engines, and agents.
+4. Progressive complexity. The homepage orients; projects, articles, and the résumé provide depth without overload.
+5. Deliberate privacy. Publish useful professional information, never a home address, phone number, or personal email without an explicit decision.
 
 ## Accessibility & Inclusion
 
-Objetivo WCAG 2.2 AA. Navegación completa con teclado, estados de foco visibles, contraste mínimo de 4.5:1 para texto normal, contenido legible al 200% de zoom y respeto a preferencias de movimiento y esquema de color.
+Target WCAG 2.2 AA. Full keyboard navigation, visible focus states, a minimum 4.5:1 contrast ratio for normal text, readable content at 200% zoom, and respect for motion and color-scheme preferences.
